@@ -1,0 +1,72 @@
+body{
+      color:white; /*definindo a cor da fonte*/
+      min-width:100%; /*largura minima aceitavel da página*/
+      min-height:800px;/*altura minima aceitavel*/
+}
+.titulo-pula-linha{/*Aqui define o título calculadora de Danos, tamanho e margem do topo*/
+    font-size: 50px;
+    margin-top:2px;
+}
+.titulo-pula-linha:hover{/*esse efeito hover quando passa o mouse muda de cor do título*/
+    color:rgb(236, 6, 6);
+
+}
+.linha-container{
+    padding-top: 2px;
+}
+.calculadora-dano{ /*aqui adicinonei a imagem*/
+    background-image: url("https://images2.alphacoders.com/625/thumb-1920-625617.jpg"); /*seleciona imagem*/
+    background-position: center; /*centraliza imagem*/
+    background-size:cover; /*imagem cobre toda área do div*/
+}
+.calculadora-dano{/*aqui acionei uma borda rosa e selecionei o espaço da margem de dentro e de fora*/
+    border: 5px solid pink;
+    border-radius:5px;
+    margin:150px;
+    margin-top:0;
+    padding:10px;
+    padding-bottom: 5px;
+    text-align: center;
+    
+}
+.linha-container {/*aqui pega todos os personagens que estão dentro da vertical, deixam eles na horizontal em sequencia*/
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.elementos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;}
+
+.elementopersonagem{/*esse efeito deixa a imagem preto e branco*/
+    -webkit-filter:grayscale(100%);
+}
+.elementopersonagem:hover{/*aqui quando passa o mouse devolve as cores*/
+    -webkit-filter:grayscale(0%);
+    transition: 0.55s;
+}
+.elementoarma{
+    -webkit-filter:grayscale(100%);/*esse efeito deixa a imagem preto e branco*/
+}
+.elementoarma:hover{
+    -webkit-filter:grayscale(0%);/*aqui quando passa o mouse devolve as cores*/
+    transition: 0.55s;
+}
+#calcular{/*quando passa o mouse ele faz uma animação de 0.4s*/
+    transition-duration: 0.4s;
+    padding: 12px 28px;
+      }
+#calcular{
+    padding: 12px 28px;
+}
+      
+#calcular:hover {/*quando passa o mouse ele muda de cor*/
+    background-color: #ec4f3a;
+    color: white;
+    padding: 12px 28px;
+    }
